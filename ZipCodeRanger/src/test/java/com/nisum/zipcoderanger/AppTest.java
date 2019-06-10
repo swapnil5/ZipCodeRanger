@@ -119,4 +119,47 @@ public class AppTest
 		assertEquals(expectedOutput, zipCode.FindZipCodeRang(input));		
 	}
     
+	@Test
+	public void zipcodeLenthIsMore() {
+		
+		List<Integer> list1 = new ArrayList<>();
+		list1.add(94133);
+		list1.add(94133);
+		
+		//zip code length is more than 5-digit
+		List<Integer> list2 = new ArrayList<>();
+		list2.add(942001);
+		list2.add(94299);
+		
+		List<List<Integer>> input = new ArrayList<>();
+		input.add(list1);
+		input.add(list2);
+		
+		List<List<Integer>> expectedOutput = new ArrayList<>();
+		expectedOutput.add(list1);
+		assertEquals(expectedOutput, zipCode.FindZipCodeRang(input));
+	}
+	
+	@Test
+	public void zipcodeLenthIsLow() {
+		
+		List<Integer> list1 = new ArrayList<>();
+		list1.add(94133);
+		list1.add(94133);
+		
+		//zip code length is less than 5-digit
+		List<Integer> list2 = new ArrayList<>();
+		list2.add(9420);
+		list2.add(94299);
+		
+		List<List<Integer>> input = new ArrayList<>();
+		input.add(list1);
+		input.add(list2);
+		
+		List<List<Integer>> expectedOutput = new ArrayList<>();
+		expectedOutput.add(list1);
+		
+		assertEquals(expectedOutput, zipCode.FindZipCodeRang(input));
+	}
+	
 }
