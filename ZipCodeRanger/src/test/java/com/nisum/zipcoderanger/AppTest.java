@@ -84,7 +84,7 @@ public class AppTest
 	}
 	
 	@Test
-	public void listHaveMoreThanValue() {
+	public void listHaveMoreThanTwoValue() {
 		
 		List<Integer> list1 = new ArrayList<>();
 		list1.add(94133);
