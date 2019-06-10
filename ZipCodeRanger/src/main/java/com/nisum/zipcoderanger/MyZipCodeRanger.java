@@ -15,7 +15,7 @@ public class MyZipCodeRanger
 		list1.add(94133);
 		
 		List<Integer> list2 = new ArrayList<>();
-		list2.add(94200);
+		list2.add(46001);
 		list2.add(94299);
 		
 		List<Integer> list3 = new ArrayList<>();
